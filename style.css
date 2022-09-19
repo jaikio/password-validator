@@ -1,0 +1,113 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coda", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* background look */
+body {
+  background-image: linear-gradient(to left, #212529, #343a40);
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.6rem;
+  color: #343a40;
+}
+
+.box {
+  position: relative;
+  width: 40rem;
+
+  background-image: none;
+  background-color: rgba(222, 226, 230, 0.857);
+
+  padding: 4rem;
+  border-radius: 11px;
+  box-shadow: 5px 5px 5px rgba(117, 117, 117, 0.4);
+}
+
+.box .input-box {
+  position: relative;
+  width: 100%;
+  background-color: rgba(222, 226, 230, 0.857);
+  padding: 0.5rem;
+  border-radius: 11px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.151);
+
+  margin-bottom: 4rem;
+}
+
+.box .input-box input {
+  position: relative;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 1rem 0.5rem;
+
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  font-size: 1.6rem;
+  font-family: "Coda", sans-serif;
+}
+
+#btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #212529;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#copy {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  right: 2.9rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* helper classes */
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.gucci {
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+
+.gucci .icon {
+  stroke: #2b8a3e;
+}
